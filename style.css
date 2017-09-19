@@ -29,6 +29,7 @@ header {
 border-bottom: 1px solid seashell;
 min-height: 69px;
 margin-right: 10px;
+
 }
 
 .logo {
@@ -76,29 +77,84 @@ header nav {
   text-align: center;
 }
 
-#showcase h2, h4 {
-  background-color: black;
-}
-
 
 #showcase h2 {
   margin-top: 300px;
 
 }
 
+.h2h4 {
+  background-color: black;
+
+
+}
 
 /* Boxes */
 
-#boxes .box{
-float: left;
-align-items: center;
-display: inline-flex;
+.box img {
+  height: 200px;
+display: block;
+margin: 10px;
+}
+
+.box h4 {
+  display: block;
+  font-weight: bold;
+    text-align: center;
+    padding: 5px;
+}
+
+#boxes .flexbox {
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
 }
 
 
+/* Locations */
+
+.locations {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+
+}
+
+
+.locations h3 {
+margin: 0px;
+padding: 10px;
+opacity: 1;
+display: block;
+}
+
+.locations p {
+  display: block;
+  margin: 22px;
+}
+
+.location {
+  background-color: black;
+  width: 300px;
+  margin: 40px;
+  opacity: 1px;
+  flex-direction: column;
+  display: inline-block;
+}
+
+/* contact */
+
+.contact {
+  height: 200px;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  background: seashell;
+}
 
 
 /* footer */
-.copyright {
+footer .copyright {
   text-align: left;
+  display: block;
+  font-size: 15px;
 }
